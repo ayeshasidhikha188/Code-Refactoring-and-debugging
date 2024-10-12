@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(240, 248, 255); /* Light background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%; /* Adjust as needed */
+    margin: auto;
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#NoteFormContainer {
+    background-color: rgb(173, 216, 230); /* Light blue background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#NoteForm {
+    display: flex;
+    flex-direction: column; /* Stack title and note vertically */
+}
+
+#TitleText {
+    height: 30px;
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Space between title and note */
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#NoteText {
+    height: 80px;
+    width: 100%; /* Full width of the container */
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#SubmitButton {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.previous-notes {
+    margin-top: 20px; /* Space above previous notes */
+}
+
+.previous-notes h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.previous-notes ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.previous-notes li {
+    margin-bottom: 5px; /* Space between notes */
+    padding: 5px;
+    background-color: rgb(240, 255, 240); /* Light green for saved notes */
+    border-radius: 4px;
+}
+
