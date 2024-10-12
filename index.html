@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/noteStyle.css">
+    <title>NotesBox</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NotesBox</h1>
+            <p>Keep track of your thoughts and ideas.</p>
+        </header>
+
+        <div class="content">
+            <div id="NoteFormContainer">
+                <h2>Add Your Thoughts</h2>
+                <form action="/" method="POST">
+                    <div id="NoteForm">
+                        <input type="text" id="TitleText" name="title" placeholder="Enter your note title here..." required>
+                        <textarea id="NoteText" name="note" placeholder="Enter your note here..." required></textarea>
+                    </div>
+                    <button type="submit" id="SubmitButton">Save Note</button>
+                </form>
+            </div>
+
+            <div class="previous-notes">
+                <h3>Your Saved Thoughts</h3>
+                <ul>
+                    {% for note in notes %}
+                        <li>
+                            <strong>{{ note.title }}</strong>: <span>{{ note.content }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
